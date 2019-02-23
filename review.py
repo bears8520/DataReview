@@ -12,3 +12,9 @@ sum_len = 0
 for d in data:
 	sum_len = sum_len + len(d)
 print('平均長度', sum_len/len(data))
+
+new = []
+for a in data:
+	if len(a) < 100:
+		new.append(a)
+print('裡面有', len(new), '筆資料長度小於100')
